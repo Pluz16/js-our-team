@@ -51,3 +51,27 @@ const member6 = {
 };
 const arrEmployes = [member1, member2, member3, member4, member5, member6];
 
+printCards();
+
+function printCards(){
+    for(i = 0; i < arrEmployes.length; i++){
+        //make div
+        const eleDiv = document.createElement('div');
+        eleDiv.classList.add('card');
+        eleCardsContainer.append(eleDiv);
+        //make img
+        const eleImg = document.createElement('img');
+        eleImg.src = `img/${arrEmployes[i].img}`;
+        eleDiv.appendChild(eleImg);
+        //make h4
+        const eleH3 = document.createElement('h3');
+        eleH3.innerHTML = arrEmployes[i].name;
+        eleDiv.append(eleH3);
+        //make p
+        const eleP = document.createElement('p');
+        eleP.innerHTML = arrEmployes[i].job;
+        eleDiv.append(eleP);
+        //console.log(arrEmployes[i].name);  
+    }
+}
+
