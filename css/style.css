@@ -7,6 +7,7 @@
 .container {
     max-width: 900px;
     margin: 0 auto;
+    background-color: bisque;
 }
 
 .cards-container {
@@ -21,14 +22,18 @@
 
 img {
     width: 100%;
+    border-radius: 50%;
 }
 
 .card{
     flex: 1 1 calc((100% - 2rem) / 3);
+    align-items: center;
 }
 
 body{
     justify-content: center;
     align-items: center;
 }
+
+
 
